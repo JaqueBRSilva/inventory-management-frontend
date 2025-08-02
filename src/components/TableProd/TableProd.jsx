@@ -18,9 +18,9 @@ export default function TableProd(props) {
                 <tbody key={index}>
                     <tr>
                         <td>{prod.id}</td>
-                        <td>{prod.nome}</td>
-                        <td>{prod.quantidade}</td>
-                        <td>R$ {prod.preco}</td>
+                        <td>{prod.name || prod.nome}</td>
+                        <td>{prod.quantity || prod.quantidade}</td>
+                        <td>R$ {prod.price || prod.preco}</td>
                     </tr>
                 </tbody>
             ))}
